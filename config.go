@@ -55,5 +55,5 @@ type PodSpec struct {
 	v1.PodSpec `json:",inline"`
 
 	// PluginContainer describes the container the plugin should be run in.
-	PluginContainer v1.Container `json:"pluginContainer"`
+	PluginContainer v1.Container `json:"pluginContainer" yaml:"pluginContainer,omitempty"`
 }
